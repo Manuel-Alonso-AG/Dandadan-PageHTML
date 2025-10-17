@@ -1,68 +1,204 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- Estilo de la pagina -->
+		<link rel="stylesheet" href="../assets/css/style.css" />
+		<!-- Referencia al css bootstrap-->
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+			crossorigin="anonymous"
+		/>
 
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
-      crossorigin="anonymous"
-    />
+		<title>Dandadan</title>
+	</head>
+	<body>
+		<nav
+			class="navbar navbar-expand-lg bg-dark border-bottom border-body"
+			data-bs-theme="dark"
+		>
+			<div class="container-fluid">
+				<!-- Encabezado -->
+				<div class="container row">
+					<span class="navbar-brand mb-0 h1">Dandadan wiki</span>
+					<span class="navbar-text"> Angel Alonso - Ariana Orive </span>
+				</div>
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-bs-toggle="collapse"
+					data-bs-target="#navbarNav"
+					aria-controls="navbarNav"
+					aria-expanded="false"
+					aria-label="Toggle navigation"
+				>
+					<span class="navbar-toggler-icon"></span>
+				</button>
 
-    <title>Dandadan</title>
-  </head>
-  <body>
-    <nav
-      class="navbar navbar-expand-lg bg-dark border-bottom border-body"
-      data-bs-theme="dark"
-    >
-      <div class="container-fluid">
-        <!-- Encabezado -->
-        <div class="container row">
-          <span class="navbar-brand mb-0 h1">Dandadan wiki</span>
-          <span class="navbar-text"> Angel Alonso - Ariana Orive </span>
-        </div>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
+				<!-- Barra de navegación-->
+				<div class="collapse navbar-collapse" id="navbarNav">
+					<ul class="navbar-nav">
+						<li class="nav-item">
+							<a class="nav-link" href="../index.html">Inicio</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="personajes.html">Personajes</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link active" aria-current="page" href="#"
+								>Historia</a
+							>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
 
-        <!-- Barra de navegación-->
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" href="../index.html">Inicio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="personajes.html">Personajes</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#"
-                >Historia</a
-              >
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+		<main class="main__page">
+			<div id="carouselId" class="carousel slide" data-bs-ride="carousel">
+				<ol class="carousel-indicators">
+					<li
+						data-bs-target="#carouselId"
+						data-bs-slide-to="0"
+						class="active"
+						aria-current="true"
+						aria-label="First slide"
+					></li>
+					<li
+						data-bs-target="#carouselId"
+						data-bs-slide-to="1"
+						aria-label="Second slide"
+					></li>
+					<li
+						data-bs-target="#carouselId"
+						data-bs-slide-to="2"
+						aria-label="Third slide"
+					></li>
+				</ol>
+				<div class="carousel-inner" role="listbox">
+					<div class="carousel-item active">
+						<img
+							src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9HVJOke5DycfnYSeF1v3-6nSThVk0nGujIw&s"
+							class="w-100 d-block"
+							alt="First slide"
+						/>
+						<div class="carousel-caption d-none d-md-block">
+							<h3>Jiji</h3>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<img
+							src="https://alfabetajuega.com/hero/2024/10/seiko-ayase-ha-aparecido-para-salvar-el-dia.jpg?width=768&aspect_ratio=16:9&format=nowebp"
+							class="w-100 d-block"
+							alt="Second slide"
+						/>
+						<div class="carousel-caption d-none d-md-block">
+							<h3>Abuela Seiko</h3>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<img
+							src="https://alfabetajuega.com/hero/2024/09/momo-dandadan.jpg?width=1200"
+							class="w-100 d-block"
+							alt="Third slide"
+						/>
+						<div class="carousel-caption d-none d-md-block">
+							<h3>Momo Ayase</h3>
+						</div>
+					</div>
+				</div>
+				<button
+					class="carousel-control-prev"
+					type="button"
+					data-bs-target="#carouselId"
+					data-bs-slide="prev"
+				>
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Previous</span>
+				</button>
+				<button
+					class="carousel-control-next"
+					type="button"
+					data-bs-target="#carouselId"
+					data-bs-slide="next"
+				>
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Next</span>
+				</button>
+			</div>
 
-    <main></main>
+			<br />
 
-    <footer></footer>
+			<h1>Historia</h1>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+			La historia de Dandadan se centra en dos adolescentes, Momo Ayase y Ken
+			Takakura (apodado Okarun), que se ven arrastrados a un mundo sobrenatural
+			tras una apuesta. Momo, que cree en fantasmas, y Okarun, que cree en
+			extraterrestres, deciden visitar por separado lugares asociados a lo
+			oculto y lo extraterrestre, lo que los lleva a encuentros con ambos. Tras
+			sus respectivos encuentros, ambos obtienen poderes y deben aliarse para
+			luchar contra entidades sobrenaturales, tanto yōkai como seres del
+			espacio.
+
+			<br />
+
+			<h1>Trama principal</h1>
+
+			<ul class="list-group list-group-flush">
+				<li class="list-group-item">
+					La histori comienza con una apuesta entre Momo y Okarun para demostrar
+					si los fantasmas o los extraterrestres son reales.
+				</li>
+				<li class="list-group-item">
+					ItemMomo es secuestrada por extraterrestres que accidentalmente
+					desbloquean sus habilidades psíquicas.
+				</li>
+				<li class="list-group-item">
+					Okarun es poseído por un espíritu que le otorga poderes
+					sobrenaturales, incluido el de transformarse en un hombre musculoso.
+				</li>
+				<li class="list-group-item">
+					Juntos, los dos utilizan sus nuevos poderes para luchar contra una
+					variedad de criaturas sobrenaturales.
+				</li>
+				<li class="list-group-item">
+					La historia mezcla elementos de terror, comedia, acción y romance, ya
+					que la relación entre Momo y Okarun se desarrolla a medida que luchan
+					juntos.
+				</li>
+				<li class="list-group-item">
+					También se introduce una gran cantidad de personajes secundarios,
+					aliados y enemigos, que amplían el mundo de la historia.
+				</li>
+			</ul>
+
+			<br />
+			<h1>Temas</h1>
+
+			<ul class="list-group list-group-flush">
+				<li class="list-group-item">
+					La fusión de géneros de terror, acción y comedia.
+				</li>
+				<li class="list-group-item">
+					El desarrollo de la relación entre Momo y Okarun, basada en el humor y
+					la acción.
+				</li>
+				<li class="list-group-item">
+					La batalla entre lo sobrenatural y lo extraterrestre, explorando lo
+					que significa ser humano en un mundo lleno de lo desconocido.
+				</li>
+			</ul>
+		</main>
+
+		<footer></footer>
+
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+			crossorigin="anonymous"
+		></script>
+	</body>
 </html>

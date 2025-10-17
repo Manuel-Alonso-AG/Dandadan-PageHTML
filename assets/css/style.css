@@ -1,0 +1,13 @@
+.main__page {
+	padding: 3rem;
+}
+
+.card-img--max-with {
+	align-self: center;
+	margin: 1rem;
+	max-width: 450px;
+}
+
+.card--with300px {
+	max-width: 300px;
+}
